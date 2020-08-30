@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+
+<parent>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-parent</artifactId>
+<version>2.0.4.RELEASE</version>
+<relativePath/> <!-- lookup parent from repository -->
+</parent>
+
+  <groupId>com.minsait.msa.labs</groupId>
+  <artifactId>msa-labs</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>${project.groupId}:${project.artifactId}</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	<java.version>1.8</java.version>
+	<spring-boot.version>2.0.4.RELEASE</spring-boot.version>
+	<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+  </properties>
+ <!-- Cambiar en profile mejor TODO <packaging>${packaging.type}</packaging> <packaging>pom</packaging> 
+
+<profiles>
+   <profile>
+       <id>pom</id>
+       <properties>
+           <packaging.type>pom</packaging.type>
+           <spring.profiles.active>dev</spring.profiles.active>
+       </properties>
+   </profile>
+   <profile>
+       <id>war</id>
+       <properties>
+            <packaging.type>war</packaging.type>
+            <spring.profiles.active>ds</spring.profiles.active>
+       </properties>
+    
+   </profile>
+   
+</profiles>
+-->
+
+
+
+	<dependencyManagement>
+	<dependencies>
+		<dependency> 
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-dependencies</artifactId>
+		<version>${spring-cloud.version}</version>
+		<type>pom</type>
+		<scope>import</scope>
+		</dependency>
+	</dependencies>
+	</dependencyManagement>
+	<modules>
+		<module>msa-labs-common</module>
+	    <module>msa-labs-servicio1</module>
+	    <module>msa-labs-servicio-jboss</module>
+	    <module>msa-labs-servicio-jbossdocker</module>
+	    <module>msa-labs-servicio2</module>
+  </modules>
+</project>

@@ -1,0 +1,3 @@
+com\minsait\msa\labs\common\request\BaseRequest.class
+com\minsait\msa\labs\common\response\BaseResponse.class
+com\minsait\msa\labs\common\response\ResponseInfo.class

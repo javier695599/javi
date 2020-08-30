@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: com.minsait.msa.labs:msa-labs-servicio2-service
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: jcallejo
+Implementation-Vendor-Id: com.minsait.msa.labs
+Build-Jdk: 1.8.0_261
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/msa-labs/msa-labs-servicio2/msa-labs-servicio2-serv
+ ice
+Created-By: Maven Integration for Eclipse
+

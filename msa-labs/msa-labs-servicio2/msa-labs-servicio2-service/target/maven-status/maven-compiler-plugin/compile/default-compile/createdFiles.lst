@@ -1,0 +1,4 @@
+com\minsait\msa\labs\servicio2\controller\HelloWorldController.class
+com\minsait\msa\labs\servicio2\service\HelloWorldService.class
+com\minsait\msa\labs\servicio2\Application.class
+com\minsait\msa\labs\servicio2\service\impl\HelloWorldServiceImpl.class

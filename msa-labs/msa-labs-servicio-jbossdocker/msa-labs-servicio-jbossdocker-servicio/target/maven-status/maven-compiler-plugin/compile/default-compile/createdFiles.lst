@@ -1,0 +1,4 @@
+com\minsait\msa\labs\servicio\jbossdocker\service\HelloWorldService.class
+com\minsait\msa\labs\servicio\jbossdocker\controller\HelloWorldController.class
+com\minsait\msa\labs\servicio\jbossdocker\Application.class
+com\minsait\msa\labs\servicio\jbossdocker\service\impl\HelloWorldServiceIMpl.class

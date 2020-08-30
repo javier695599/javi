@@ -1,0 +1,4 @@
+com\minsait\msa\labs\servicio\jboss\service\impl\HelloWorldServiceIMpl.class
+com\minsait\msa\labs\servicio\jboss\Application.class
+com\minsait\msa\labs\servicio\jboss\service\HelloWorldService.class
+com\minsait\msa\labs\servicio\jboss\controller\HelloWorldController.class
