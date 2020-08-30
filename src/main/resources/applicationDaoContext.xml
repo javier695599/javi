@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- Add this tag to enable autowired -->
+	<context:annotation-config />
+
+	<!-- bean post-processor for JPA annotations -->
+	<bean
+		class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor">
+	</bean>
+
+	<!-- Exception translation bean post processor -->
+	<bean
+		class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor">
+	</bean>
+
+	<bean class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter"
+		id="jpaVendorAdapter">
+		<property name="databasePlatform"
+			value="org.eclipse.persistence.platform.database.OraclePlatform" />
+		<!-- Comentamos la siguiente linea porque interfiere con la gestionabilidad 
+			de las trazas JPA -->
+	</bean>
+
+	<bean
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+		id="entityManagerFactory">
+		<property name="persistenceUnitName" value="${database.persistence-unit.name}" />
+		<property name="persistenceXmlLocation" value="${database.eclipselink.persistence.location}" />
+		<property name="persistenceProviderClass"
+			value="org.eclipse.persistence.jpa.PersistenceProvider" />
+		<property name="jpaVendorAdapter" ref="jpaVendorAdapter" />
+		<property name="jpaProperties">
+			<props>
+				<prop key="eclipselink.ddl-generation">${database.eclipselink.ddl-generation}</prop>
+				<prop key="eclipselink.dialect">${database.eclipselink.dialect}</prop>
+				<prop key="eclipselink.target-server">${database.eclipselink.target-server}</prop>
+				<prop key="eclipselink.target-database">${database.eclipselink.target-database}</prop>
+				<prop key="eclipselink.logging.level">${database.eclipselink.logging.level}</prop>
+				<prop key="eclipselink.logging.level.sql">${database.eclipselink.logging.level.sql}</prop>
+				<prop key="eclipselink.ddl-generation.output-mode">${database.eclipselink.ddl-generation.output-mode}
+				</prop>
+				<prop key="eclipselink.weaving">${database.eclipselink.weaving}</prop>
+				<prop key="eclipselink.orm.throw.exceptions">${database.eclipselink.orm.throw.exceptions}</prop>
+				<prop key="eclipselink.orm.validate.schema">${database.eclipselink.orm.validate.schema}</prop>
+				<prop key="eclipselink.logging.exceptions">${database.eclipselink.orm.throw.exceptions}</prop>
+			</props>
+		</property>
+	</bean>
+
+	<context:component-scan base-package="com.telefonica.ubic" />
+
+</beans>

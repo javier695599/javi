@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="ubic" transaction-type="RESOURCE_LOCAL">
+		<mapping-file>META-INF/eclipselink-orm.xml</mapping-file>
+		<!-- Definir aqui las entityClass -->
+<class>com.telefonica.cont.model.AgreaCagreeAuthoriza.java</class>
+<class>com.telefonica.cont.model.AgredAgreeSignatRepresent.java</class>
+<class>com.telefonica.cont.model.AgredCagreeAuthorizStatus.java</class>
+<class>com.telefonica.cont.model.AgredCsellingAttachmentType.java</class>
+<class>com.telefonica.cont.model.AgrepCagreeApproval.java</class>
+<class>com.telefonica.cont.model.AgrepCagreeTermOrCond.java</class>
+<class>com.telefonica.cont.model.AgrepCustomerAgreement.java</class>
+<class>com.telefonica.cont.model.AgrepCustomerAgreementIt.java</class>
+<class>com.telefonica.cont.model.AgrerCagreeItemGoverned.java</class>
+<class>com.telefonica.cont.model.AgrerCsellingAttachment.java</class>
+<class>com.telefonica.cont.model.AgresCsellingAttachment.java</class>
+<class>com.telefonica.cont.model.CevcaOplanStatusMove.java</class>
+<class>com.telefonica.cont.model.CevcaOpmilestStatusMove.java</class>
+<class>com.telefonica.cont.model.CevcaOptaskError.java</class>
+<class>com.telefonica.cont.model.CevcaOptaskStatusMove.java</class>
+<class>com.telefonica.cont.model.CevcdDateScheduleType.java</class>
+<class>com.telefonica.cont.model.CevcdOpelementType.java</class>
+<class>com.telefonica.cont.model.CevcdOplanStatus.java</class>
+<class>com.telefonica.cont.model.CevcdOpmilestEventStatus.java</class>
+<class>com.telefonica.cont.model.CevcdOpmilestStatus.java</class>
+<class>com.telefonica.cont.model.CevcdOpmilestType.java</class>
+<class>com.telefonica.cont.model.CevcdOptaskStatus.java</class>
+<class>com.telefonica.cont.model.CevcpOplanElement.java</class>
+<class>com.telefonica.cont.model.CevcpOplanMileston.java</class>
+<class>com.telefonica.cont.model.CevcpOplanTask.java</class>
+<class>com.telefonica.cont.model.CevcpOrchestrationPlan.java</class>
+<class>com.telefonica.cont.model.CevcpProcessMark.java</class>
+<class>com.telefonica.cont.model.CevcpProcessMarkGroup.java</class>
+<class>com.telefonica.cont.model.CevcpProcMarkValue.java</class>
+<class>com.telefonica.cont.model.CevcrOpelementAfterFinish.java</class>
+<class>com.telefonica.cont.model.CevcrOpelementCuorItem.java</class>
+<class>com.telefonica.cont.model.CevcrOpmilestEvent.java</class>
+<class>com.telefonica.cont.model.CevcrOpmilestEventStMove.java</class>
+<class>com.telefonica.cont.model.CevcrOpmilestItemsSpec.java</class>
+<class>com.telefonica.cont.model.CevcrOptaskIncident.java</class>
+<class>com.telefonica.cont.model.CevcrOptaskItemSpec.java</class>
+<class>com.telefonica.cont.model.CevcrOptaskRelationship.java</class>
+<class>com.telefonica.cont.model.CevcrOptaskSchedule.java</class>
+<class>com.telefonica.cont.model.CevcrPmGroup.java</class>
+<class>com.telefonica.cont.model.CevcrPmGroupRelship.java</class>
+<class>com.telefonica.cont.model.CevcrPmRelToProdOff.java</class>
+<class>com.telefonica.cont.model.CevcrPmRelToProductSp.java</class>
+<class>com.telefonica.cont.model.CevcrPmToProdSpecChar.java</class>
+<class>com.telefonica.cont.model.CevcrProcessMarkRel.java</class>
+<class>com.telefonica.cont.model.CevcrProcMarkValueRel.java</class>
+<class>com.telefonica.cont.model.CevcrProcMarkValueUse.java</class>
+<class>com.telefonica.cont.model.CevcsOpelementCuorItem.java</class>
+<class>com.telefonica.cont.model.CordaCsellingItemCharVal.java</class>
+<class>com.telefonica.cont.model.CordaCsellingStateMove.java</class>
+<class>com.telefonica.cont.model.CordaCsellingStateMoveOb.java</class>
+<class>com.telefonica.cont.model.CordaCsitemStateMove.java</class>
+<class>com.telefonica.cont.model.CordaCsitemStateMoveOb.java</class>
+<class>com.telefonica.cont.model.CordaCsitemSubstatMove.java</class>
+<class>com.telefonica.cont.model.CordaCustomerSelling.java</class>
+<class>com.telefonica.cont.model.CordaLegacyOcsMessage.java</class>
+<class>com.telefonica.cont.model.CordaLockingLog.java</class>
+<class>com.telefonica.cont.model.CorddCharactValueType.java</class>
+<class>com.telefonica.cont.model.CorddCsellingItemState.java</class>
+<class>com.telefonica.cont.model.CorddCsellingItemType.java</class>
+<class>com.telefonica.cont.model.CorddCsellingRoleClass.java</class>
+<class>com.telefonica.cont.model.CorddCsellingRoleType.java</class>
+<class>com.telefonica.cont.model.CorddCsellingState.java</class>
+<class>com.telefonica.cont.model.CorddCsellingType.java</class>
+<class>com.telefonica.cont.model.CorddCsellingVersReason.java</class>
+<class>com.telefonica.cont.model.CorddCsitemSubstate.java</class>
+<class>com.telefonica.cont.model.CorddDateScheduleType.java</class>
+<class>com.telefonica.cont.model.CorddExecutionMode.java</class>
+<class>com.telefonica.cont.model.CorddPortabilProcessType.java</class>
+<class>com.telefonica.cont.model.CorddUnitMeasure.java</class>
+<class>com.telefonica.cont.model.CordpAttachment.java</class>
+<class>com.telefonica.cont.model.CordpCustomerOrder.java</class>
+<class>com.telefonica.cont.model.CordpCustomerOrderItem.java</class>
+<class>com.telefonica.cont.model.CordpCustomerSelling.java</class>
+<class>com.telefonica.cont.model.CordpCustomerSellingItem.java</class>
+<class>com.telefonica.cont.model.CordpCustomerSellingRole.java</class>
+<class>com.telefonica.cont.model.CordpLocsCharSpec.java</class>
+<class>com.telefonica.cont.model.CordpLocsCharValue.java</class>
+<class>com.telefonica.cont.model.CordrCorderItemLocation.java</class>
+<class>com.telefonica.cont.model.CordrCorderLegacyRestReq.java</class>
+<class>com.telefonica.cont.model.CordrCorderLocation.java</class>
+<class>com.telefonica.cont.model.CordrCsellingIncident.java</class>
+<class>com.telefonica.cont.model.CordrCsellingItemBiAssoc.java</class>
+<class>com.telefonica.cont.model.CordrCsellingItemBiType.java</class>
+<class>com.telefonica.cont.model.CordrCsellingItemIncident.java</class>
+<class>com.telefonica.cont.model.CordrCsellingItemRelaIn.java</class>
+<class>com.telefonica.cont.model.CordrCsellingItemRelaOut.java</class>
+<class>com.telefonica.cont.model.CordrCsellingItemSchedule.java</class>
+<class>com.telefonica.cont.model.CordrCsellingItemTypeLan.java</class>
+<class>com.telefonica.cont.model.CordrCsellingItemTypeLanPK.java</class>
+<class>com.telefonica.cont.model.CordrCsellingRelaIn.java</class>
+<class>com.telefonica.cont.model.CordrCsellingRelaOut.java</class>
+<class>com.telefonica.cont.model.CordrCsellingRelaType.java</class>
+<class>com.telefonica.cont.model.CordrCsellingRelaTypeLan.java</class>
+<class>com.telefonica.cont.model.CordrCsellingRelaTypeLanPK.java</class>
+<class>com.telefonica.cont.model.CordrCsellingRoleAssoc.java</class>
+<class>com.telefonica.cont.model.CordrCsellingRoleTypeLan.java</class>
+<class>com.telefonica.cont.model.CordrCsellingRoleTypeLanPK.java</class>
+<class>com.telefonica.cont.model.CordrCsellingStateLang.java</class>
+<class>com.telefonica.cont.model.CordrCsellingStateLangPK.java</class>
+<class>com.telefonica.cont.model.CordrCsellingStateRela.java</class>
+<class>com.telefonica.cont.model.CordrCsellingTypeLang.java</class>
+<class>com.telefonica.cont.model.CordrCsellingTypeLangPK.java</class>
+<class>com.telefonica.cont.model.CordrCsellingVersionRela.java</class>
+<class>com.telefonica.cont.model.CordrCsellingVersionType.java</class>
+<class>com.telefonica.cont.model.CordrCsitemDateType.java</class>
+<class>com.telefonica.cont.model.CordrCsitemRelaType.java</class>
+<class>com.telefonica.cont.model.CordrCsitemRelaTypeLang.java</class>
+<class>com.telefonica.cont.model.CordrCsitemRelaTypeLangPK.java</class>
+<class>com.telefonica.cont.model.CordrCsitemStateLang.java</class>
+<class>com.telefonica.cont.model.CordrCsitemStateLangPK.java</class>
+<class>com.telefonica.cont.model.CordrCsitemSubstateAsso.java</class>
+<class>com.telefonica.cont.model.CordrCsitemSubstateLang.java</class>
+<class>com.telefonica.cont.model.CordrCsitemSubstateLangPK.java</class>
+<class>com.telefonica.cont.model.CordrCsitemTypeAssoc.java</class>
+<class>com.telefonica.cont.model.CordsCorderLegacyRestReq.java</class>
+<class>com.telefonica.cont.model.CordsCsellingIncident.java</class>
+<class>com.telefonica.cont.model.CordsCsellingItemBiAssoc.java</class>
+<class>com.telefonica.cont.model.CordsCsellingItemIncident.java</class>
+<class>com.telefonica.cont.model.CordsCsellingItemRelaIn.java</class>
+<class>com.telefonica.cont.model.CordsCsellingItemRelaOut.java</class>
+<class>com.telefonica.cont.model.CordsCsellingItemSchedule.java</class>
+<class>com.telefonica.cont.model.CordsCsellingRelaIn.java</class>
+<class>com.telefonica.cont.model.CordsCsellingRelaOut.java</class>
+<class>com.telefonica.cont.model.CordsCsellingStateMove.java</class>
+<class>com.telefonica.cont.model.CordsCsellingVersionRela.java</class>
+<class>com.telefonica.cont.model.CordsCsitemStateMove.java</class>
+<class>com.telefonica.cont.model.CordsCustomerOrder.java</class>
+<class>com.telefonica.cont.model.CordsCustomerOrderItem.java</class>
+<class>com.telefonica.cont.model.CordsCustomerSelling.java</class>
+<class>com.telefonica.cont.model.CordsCustomerSellingItem.java</class>
+<class>com.telefonica.cont.model.CuinaPhyParameterValue.java</class>
+<class>com.telefonica.cont.model.CuinaPortaReqHasStep.java</class>
+<class>com.telefonica.cont.model.CuinaPortaReqLogError.java</class>
+<class>com.telefonica.cont.model.CuindCqitemRelatWorkType.java</class>
+<class>com.telefonica.cont.model.CuindCqitemSourceType.java</class>
+<class>com.telefonica.cont.model.CuindCsellingStateReason.java</class>
+<class>com.telefonica.cont.model.CuindErrorMap.java</class>
+<class>com.telefonica.cont.model.CuindGenericQueueType.java</class>
+<class>com.telefonica.cont.model.CuindPortabilityReqStatus.java</class>
+<class>com.telefonica.cont.model.CuinpCqitemPrice.java</class>
+<class>com.telefonica.cont.model.CuinpCqitemPriceAlteration.java</class>
+<class>com.telefonica.cont.model.CuinpCustomerQuote.java</class>
+<class>com.telefonica.cont.model.CuinpCustomerQuoteItem.java</class>
+<class>com.telefonica.cont.model.CuinpGenericQueue.java</class>
+<class>com.telefonica.cont.model.CuinpPortabilityRequest.java</class>
+<class>com.telefonica.cont.model.CuinrCoitemRelProdPromoted.java</class>
+<class>com.telefonica.cont.model.CuinrCoitemRelProdPromotedPK.java</class>
+<class>com.telefonica.cont.model.CuinrCqitemCustomerBill.java</class>
+<class>com.telefonica.cont.model.CuinrCqitemRelaShopCartIt.java</class>
+<class>com.telefonica.cont.model.CuinrCqitemRelatedWork.java</class>
+<class>com.telefonica.cont.model.CuinrCqitemRelProdPromoted.java</class>
+<class>com.telefonica.cont.model.CuinrCqitemRelProdPromotedPK.java</class>
+<class>com.telefonica.cont.model.CuinrCquoteInvolvesPoterm.java</class>
+<class>com.telefonica.cont.model.CuinrCsellingStateInvolve.java</class>
+<class>com.telefonica.cont.model.CuinrCsellingTypeState.java</class>
+<class>com.telefonica.cont.model.CurirPaymentMethodAccept.java</class>
+		<properties>
+			<property name="eclipselink.session.customizer"
+				value="com.telefonica.tran.comarq.cc.utils.TE_GeneradorUUID" />
+			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:oracle:thin:@//enhol01v-scan.serv.test.dc.es.telefonica:50001/ITLCO0" />
+			<property name="javax.persistence.jdbc.user" value="UBD_VENTAS1" />
+			<property name="javax.persistence.jdbc.password" value="temporal1" />
+			<property name="eclipselink.logging.level" value="off" />
+			<property name="eclipselink.logging.exceptions" value="false" />
+			<property name="javax.persistence.validation.mode" value="AUTO" />
+		</properties>
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<entity-mappings
+	xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1"
+	xsi:schemaLocation="http://www.eclipse.org/eclipselink/xsds/persistence/orm http://www.eclipse.org/eclipselink/xsds/eclipselink_orm_2_1.xsd">
+	<persistence-unit-metadata>
+		<persistence-unit-defaults>
+			<schema>UMD_VENTAS1</schema>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+
+	<!-- Conversores -->
+	<converter name="DateTimeConverter"
+		class="com.telefonica.tran.comarq.cc.utils.DateTimeConverter" />
+	<converter name="TimestampConverter"
+		class="com.telefonica.tran.comarq.cc.utils.TimestampConverter" />
+	<converter name="BigDecimalBooleanConverter"
+		class="com.telefonica.tran.comarq.cc.utils.BigDecimalBooleanConverter" />
+	<converter name="XMLTypeConverter"
+		class="com.telefonica.tran.comarq.cc.utils.XMLTypeConverter" />
+
+
+	<named-query name="query0">
+		<query>select t1 from CevcaOptaskStatusMove t1 where t1.cevcpOplanTask.opelIdOplanTask in :idsOPTask and t1.othsTiEndValidity is null</query>
+	</named-query>
+
+	<named-query name="query1">
+		<query>select t1 from CevcrOpmilestEvent t1 where t1.cevcpOplanMileston1.opelIdOplanMileston= :idOPMilestone or t1.cevcpOplanMileston2.opelIdOplanMileston= :idOPMilestone
+		</query>
+	</named-query>
+
+</entity-mappings>
